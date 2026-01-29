@@ -3,96 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shreetej Ghodekar | Multi-Agent Systems & GenAI Architect</title>
+    <title>Shreetej Ghodekar | GenAI Architect & Agentic Systems</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; color: #e2e8f0; }
         .glass-card { background: rgba(30, 41, 59, 0.4); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        .skill-gradient { background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); }
-        .agent-glow { box-shadow: 0 0 20px rgba(59, 130, 246, 0.1); }
         .text-gradient { background: linear-gradient(to right, #60a5fa, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .timeline-dot { position: relative; }
+        .timeline-dot::after { content: ''; position: absolute; left: 50%; bottom: -100%; width: 2px; height: 100%; background: rgba(59, 130, 246, 0.2); transform: translateX(-50%); }
     </style>
 </head>
 <body>
 
     <nav class="fixed w-full z-50 py-6 px-10 flex justify-between items-center bg-[#020617]/80 backdrop-blur-md">
-        <div class="text-xl font-bold tracking-tighter text-gradient">SHREETEJ.AI</div>
+        <div class="text-xl font-bold tracking-tighter text-gradient underline decoration-blue-500/50">SHREETEJ.AI</div>
         <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-slate-400">
-            <a href="#capabilities" class="hover:text-white transition">Capabilities</a>
-            <a href="#agent-architectures" class="hover:text-white transition">Agent Architectures</a>
-            <a href="#stack" class="hover:text-white transition">The Stack</a>
+            <a href="#evolution" class="hover:text-white transition">Evolution</a>
+            <a href="#agent-architectures" class="hover:text-white transition">Agentic Workflows</a>
+            <a href="#insights" class="hover:text-white transition">Neural Insights</a>
         </div>
     </nav>
 
-    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold mb-8">
-            <span class="relative flex h-2 w-2">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-            </span>
-            8+ YEARS OF ENGINEERING EXCELLENCE
-        </div>
+    <section class="min-h-[80vh] flex flex-col justify-center items-center text-center px-6 pt-32">
         <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tight">
-            I Build <span class="text-gradient">Intelligent</span> <br>Agentic Systems.
+            Engineering <span class="text-gradient">Intelligence</span>.
         </h1>
-        <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
-            Senior ML Engineer specializing in Multi-Agent orchestration, autonomous workflows, and production-grade Generative AI applications.
+        <p class="text-slate-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-10">
+            From maintaining naval alternators to architecting Multi-Agent AI Swarms. 
+            Senior ML Engineer dedicated to upgrading systems for the betterment of society.
         </p>
         <div class="flex flex-wrap justify-center gap-4">
-            <a href="#agent-architectures" class="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-blue-500 hover:text-white transition-all">Explore Agent Workflows</a>
-            <a href="mailto:shreetejghodekar@gmail.com" class="px-8 py-4 glass-card font-bold rounded-full hover:bg-slate-800 transition-all">Get In Touch</a>
+            <a href="#evolution" class="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-blue-600 hover:text-white transition-all">My Evolution</a>
+            <a href="mailto:shreetejghodekar@gmail.com" class="px-8 py-4 glass-card font-bold rounded-full hover:bg-slate-800 transition-all">Collab for Impact</a>
         </div>
     </section>
 
-    <section id="capabilities" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div>
-                <h2 class="text-4xl font-bold mb-6">Core Capabilities</h2>
-                <p class="text-slate-400 mb-8 leading-relaxed">
-                    Moving beyond simple prompt engineering. I design systems where AI models interact, reason, and execute tasks autonomously.
-                </p>
-                <div class="space-y-6">
-                    <div class="flex gap-4">
-                        <div class="h-10 w-10 shrink-0 flex items-center justify-center rounded-lg bg-blue-600/20 text-blue-400"><i class="fas fa-microchip"></i></div>
-                        <div>
-                            <h4 class="font-bold">LLM Fine-Tuning</h4>
-                            <p class="text-sm text-slate-500">Optimizing open-source models (Gemma, Florence, DeepSeek) for domain-specific accuracy and high-speed local inference.</p>
-                        </div>
+    <section id="evolution" class="py-24 px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-16 text-center">A Thirst for Learning: My Transition</h2>
+        <div class="space-y-12">
+            <div class="flex gap-8 group">
+                <div class="flex flex-col items-center">
+                    <div class="h-12 w-12 rounded-full bg-slate-800 border-2 border-slate-700 flex items-center justify-center timeline-dot group-hover:border-blue-500 transition-all">
+                        <i class="fas fa-bolt text-blue-400"></i>
                     </div>
-                    <div class="flex gap-4">
-                        <div class="h-10 w-10 shrink-0 flex items-center justify-center rounded-lg bg-purple-600/20 text-purple-400"><i class="fas fa-layer-group"></i></div>
-                        <div>
-                            <h4 class="font-bold">Advanced RAG Pipelines</h4>
-                            <p class="text-sm text-slate-500">Architecting knowledge retrieval systems using Vector DBs (Postgres/PGVector) with hybrid search and reranking techniques.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4">
-                        <div class="h-10 w-10 shrink-0 flex items-center justify-center rounded-lg bg-green-600/20 text-green-400"><i class="fas fa-project-diagram"></i></div>
-                        <div>
-                            <h4 class="font-bold">Multi-Agent Orchestration</h4>
-                            <p class="text-sm text-slate-500">Building autonomous teams of agents with specialized skills (Planners, Executers, Verifiers) using LangGraph and CrewAI.</p>
-                        </div>
-                    </div>
+                </div>
+                <div class="pb-12 border-b border-slate-800 w-full">
+                    <span class="text-blue-500 font-bold text-xs tracking-widest uppercase">2014 - 2016 | THE FOUNDATION</span>
+                    <h3 class="text-xl font-bold text-white mt-1">Electrical Engineering & Marine Systems</h3>
+                    <p class="text-slate-400 mt-4 leading-relaxed">
+                        Started as an Electrical Engineer [cite: 65, 68, 148] performing high-stakes repairs on Indian Navy and Coast Guard ships (INS TABAR, INS TEG)[cite: 40]. This phase instilled a rigorous discipline for system reliability and hardware fundamentals[cite: 40, 45].
+                    </p>
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="p-6 glass-card rounded-3xl agent-glow">
-                    <h3 class="text-3xl font-bold text-white mb-2">200%</h3>
-                    <p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Inference Speed</p>
+            <div class="flex gap-8 group">
+                <div class="flex flex-col items-center">
+                    <div class="h-12 w-12 rounded-full bg-slate-800 border-2 border-slate-700 flex items-center justify-center timeline-dot group-hover:border-purple-500 transition-all">
+                        <i class="fas fa-code text-purple-400"></i>
+                    </div>
                 </div>
-                <div class="p-6 glass-card rounded-3xl mt-8">
-                    <h3 class="text-3xl font-bold text-white mb-2">20%</h3>
-                    <p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Efficiency Gain</p>
+                <div class="pb-12 border-b border-slate-800 w-full">
+                    <span class="text-purple-500 font-bold text-xs tracking-widest uppercase">2017 - 2021 | THE SHIFT</span>
+                    <h3 class="text-xl font-bold text-white mt-1">Transition to Software Engineering</h3>
+                    <p class="text-slate-400 mt-4 leading-relaxed">
+                        Pursued a PG-DAC from CDAC-Pune to pivot into full-stack development[cite: 61, 62, 144, 145]. Mastered the Spring Framework and Java to build scalable web applications and automation tools for India Post[cite: 26, 41, 111, 118].
+                    </p>
                 </div>
-                <div class="p-6 glass-card rounded-3xl">
-                    <h3 class="text-3xl font-bold text-white mb-2">1.5k+</h3>
-                    <p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Agents Deployed</p>
+            </div>
+            <div class="flex gap-8 group">
+                <div class="flex flex-col items-center">
+                    <div class="h-12 w-12 rounded-full bg-slate-800 border-2 border-slate-700 flex items-center justify-center group-hover:border-green-500 transition-all">
+                        <i class="fas fa-brain text-green-400"></i>
+                    </div>
                 </div>
-                <div class="p-6 glass-card rounded-3xl mt-8">
-                    <h3 class="text-3xl font-bold text-white mb-2">50%</h3>
-                    <p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Error Reduction</p>
+                <div class="w-full">
+                    <span class="text-green-500 font-bold text-xs tracking-widest uppercase">2022 - PRESENT | THE ASCENT</span>
+                    <h3 class="text-xl font-bold text-white mt-1">AI/ML Team Lead & Agentic Architect</h3>
+                    <p class="text-slate-400 mt-4 leading-relaxed">
+                        Currently leading AI initiatives , specializing in Generative AI, RAG, and Multi-Agent orchestration[cite: 133, 137, 139]. Using these technologies to solve real-world logistical challenges and improve national infrastructure[cite: 103, 165].
+                    </p>
                 </div>
             </div>
         </div>
@@ -100,100 +90,66 @@
 
     <section id="agent-architectures" class="py-24 px-6 bg-slate-900/30">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-center text-4xl font-bold mb-16 italic">Intelligent Agent Workflows</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <div class="p-8 glass-card rounded-3xl border-t-4 border-blue-500">
-                    <div class="flex justify-between items-start mb-6">
-                        <i class="fas fa-code-branch text-3xl text-blue-500"></i>
-                        <span class="text-[10px] bg-blue-500/20 text-blue-400 px-2 py-1 rounded-md font-bold">DEV-OPS AI</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Autonomous Coding Swarm</h3>
+            <h2 class="text-center text-4xl font-bold mb-16 italic text-gradient">Agentic Capabilities</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <div class="p-8 glass-card rounded-3xl">
+                    <h3 class="text-xl font-bold mb-4 text-blue-400">The "Automatic Coder" Swarm</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        A collaborative agent chain featuring a <strong>Planner</strong> (requirement analysis), <strong>Coder</strong> (logic implementation), <strong>Reviewer</strong> (security/optimization), and <strong>Issue Resolver</strong> (automated bug fixing).
+                        I create systems where tasks are autonomously handled by specialized agents:
                     </p>
-                    <ul class="text-xs space-y-2 text-slate-500">
-                        <li><i class="fas fa-check text-blue-500 mr-2"></i> Self-healing code pipelines</li>
-                        <li><i class="fas fa-check text-blue-500 mr-2"></i> Automated PR descriptions & testing</li>
-                    </ul>
-                </div>
-
-                <div class="p-8 glass-card rounded-3xl border-t-4 border-purple-500">
-                    <div class="flex justify-between items-start mb-6">
-                        <i class="fas fa-id-card text-3xl text-purple-500"></i>
-                        <span class="text-[10px] bg-purple-500/20 text-purple-400 px-2 py-1 rounded-md font-bold">HR-TECH AI</span>
+                    <div class="grid grid-cols-2 gap-4 text-xs font-bold uppercase tracking-tighter">
+                        <div class="p-3 bg-slate-800 rounded-xl border border-slate-700">Planner Agent</div>
+                        <div class="p-3 bg-slate-800 rounded-xl border border-slate-700">Coder Agent</div>
+                        <div class="p-3 bg-slate-800 rounded-xl border border-slate-700">Reviewer Agent</div>
+                        <div class="p-3 bg-slate-800 rounded-xl border border-slate-700">Issue Resolver</div>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Agentic Resume Builder</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        An intelligent system that uses <strong>Analysis Agents</strong> to parse career history and <strong>Optimization Agents</strong> to tailor content for specific ATS algorithms in real-time.
-                    </p>
-                    <ul class="text-xs space-y-2 text-slate-500">
-                        <li><i class="fas fa-check text-purple-500 mr-2"></i> Dynamic skill mapping</li>
-                        <li><i class="fas fa-check text-purple-500 mr-2"></i> Multi-format generation agents</li>
+                </div>
+                <div class="p-8 glass-card rounded-3xl">
+                    <h3 class="text-xl font-bold mb-4 text-purple-400">Skills Beyond Prompting</h3>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-center gap-3"><i class="fas fa-check-circle text-purple-500"></i> Domain-Specific Model Fine-Tuning</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check-circle text-purple-500"></i> Knowledge Grounding with Hybrid RAG</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check-circle text-purple-500"></i> Agent Skill-set Definition & Tool Use</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check-circle text-purple-500"></i> Orchestration with LangGraph & CrewAI</li>
                     </ul>
-                </div>
-
-                <div class="p-8 glass-card rounded-3xl border-t-4 border-green-500">
-                    <div class="flex justify-between items-start mb-6">
-                        <i class="fas fa-shipping-fast text-3xl text-green-500"></i>
-                        <span class="text-[10px] bg-green-500/20 text-green-400 px-2 py-1 rounded-md font-bold">LOGISTICS AI</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Vision & Logistics Agents</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Deployed agentic workflows that orchestrate <strong>Vision Agents</strong> (OCR/Object Detection) and <strong>Data Agents</strong> to automate parcel tracking and dimension extraction.
-                    </p>
-                    <ul class="text-xs space-y-2 text-slate-500">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Real-time inference on edge</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> 99.9% data extraction accuracy</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="stack" class="py-24 px-6 max-w-7xl mx-auto">
-        <h2 class="text-2xl font-bold mb-12 text-center text-slate-500 uppercase tracking-[0.3em]">The Architect's Toolkit</h2>
-        <div class="flex flex-wrap justify-center gap-10 opacity-60 grayscale hover:grayscale-0 transition-all">
-            <div class="flex flex-col items-center gap-2"><i class="fab fa-python text-4xl"></i><span class="text-[10px] font-bold">PYTHON</span></div>
-            <div class="flex flex-col items-center gap-2"><i class="fab fa-aws text-4xl"></i><span class="text-[10px] font-bold">AWS</span></div>
-            <div class="flex flex-col items-center gap-2"><i class="fab fa-docker text-4xl"></i><span class="text-[10px] font-bold">DOCKER</span></div>
-            <div class="flex flex-col items-center gap-2"><i class="fas fa-database text-4xl"></i><span class="text-[10px] font-bold">POSTGRES</span></div>
-            <div class="flex flex-col items-center gap-2"><i class="fab fa-golang text-4xl"></i><span class="text-[10px] font-bold">GOLANG</span></div>
-            <div class="flex flex-col items-center gap-2"><i class="fab fa-react text-4xl"></i><span class="text-[10px] font-bold">NEXT.JS</span></div>
-            <div class="flex flex-col items-center gap-2"><i class="fas fa-robot text-4xl text-blue-500"></i><span class="text-[10px] font-bold">LANGCHAIN</span></div>
-        </div>
-    </section>
-
-    <section class="py-24 px-6 glass-card border-y border-slate-800">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-                <h3 class="text-xl font-bold mb-6">Certifications</h3>
-                <div class="space-y-4 text-sm text-slate-400">
-                    <p><i class="fas fa-award text-yellow-500 mr-2"></i> AWS Certified Cloud Solutions Architect - Associate</p>
-                    <p><i class="fas fa-award text-yellow-500 mr-2"></i> Microsoft Certified: Azure Administrator Associate</p>
-                    <p><i class="fas fa-award text-yellow-500 mr-2"></i> Master LangChain & Generative AI Architect</p>
-                    <p><i class="fas fa-award text-yellow-500 mr-2"></i> Complete Prompt Engineering for AI Bootcamp (2025)</p>
-                </div>
-            </div>
-            <div>
-                <h3 class="text-xl font-bold mb-6">Education</h3>
-                <div class="space-y-4 text-sm text-slate-400">
-                    <p><strong>PG-DAC: Advanced Computing</strong> | CDAC ACTS-Pune</p>
-                    <p><strong>Bachelor of Engineering</strong> | Mumbai University</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-20 px-6 text-center">
-        <h2 class="text-3xl font-bold mb-6">Want to automate the impossible?</h2>
-        <div class="flex justify-center space-x-6 mb-10">
-            <a href="https://linkedin.com/in/shreetej-ghodekar-0b26" class="text-2xl hover:text-blue-500"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:shreetejghodekar@gmail.com" class="text-2xl hover:text-blue-500"><i class="fas fa-envelope"></i></a>
-            <a href="#" class="text-2xl hover:text-blue-500"><i class="fab fa-github"></i></a>
+    <section id="insights" class="py-24 px-6 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12">Neural Insights</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-6 glass-card rounded-2xl hover:bg-slate-800/50 transition">
+                <p class="text-[10px] text-blue-500 font-bold uppercase mb-2">GenAI Trends</p>
+                <h4 class="font-bold mb-3">Why Multi-Agent Systems are the future of SaaS</h4>
+                <p class="text-xs text-slate-500 mb-4">Moving from simple chatbots to autonomous reasoning engines that act like employees.</p>
+                <a href="#" class="text-xs font-bold text-white border-b border-blue-500">Read More</a>
+            </div>
+            <div class="p-6 glass-card rounded-2xl hover:bg-slate-800/50 transition">
+                <p class="text-[10px] text-purple-500 font-bold uppercase mb-2">Technical Guide</p>
+                <h4 class="font-bold mb-3">Fine-tuning Florence-2 for Edge Computing</h4>
+                <p class="text-xs text-slate-500 mb-4">How to optimize small vision models for sub-second inference in logistics.</p>
+                <a href="#" class="text-xs font-bold text-white border-b border-purple-500">Read More</a>
+            </div>
+            <div class="p-6 glass-card rounded-2xl hover:bg-slate-800/50 transition">
+                <p class="text-[10px] text-green-500 font-bold uppercase mb-2">Leadership</p>
+                <h4 class="font-bold mb-3">Scaling AI at a National Level</h4>
+                <p class="text-xs text-slate-500 mb-4">The challenges and triumphs of deploying ML models for the Department of Posts.</p>
+                <a href="#" class="text-xs font-bold text-white border-b border-green-500">Read More</a>
+            </div>
         </div>
-        <p class="text-slate-600 text-xs">Based in Navi Mumbai, Maharashtra | AI Engineer @ India Post</p>
+    </section>
+
+    <footer class="py-20 px-6 border-t border-slate-800 text-center">
+        <h2 class="text-2xl font-bold mb-6 italic">Upgrading Humanity through Technology.</h2>
+        <div class="flex justify-center space-x-8 mb-10 text-slate-500">
+            <a href="https://linkedin.com/in/shreetej-ghodekar-0b26" target="_blank" class="hover:text-white transition"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="mailto:shreetejghodekar@gmail.com" class="hover:text-white transition"><i class="fas fa-envelope fa-lg"></i></a>
+            <a href="#" class="hover:text-white transition"><i class="fab fa-github fa-lg"></i></a>
+        </div>
+        <p class="text-slate-600 text-xs font-medium tracking-widest">NAVI MUMBAI, INDIA | SENIOR ML ENGINEER</p>
     </footer>
 
 </body>
