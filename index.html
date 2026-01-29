@@ -43,6 +43,19 @@
         .agent-node {
             @apply p-4 rounded-xl border border-white/10 bg-white/5 flex flex-col items-center gap-2;
         }
+
+        .ai-highlight {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+
+        .ai-badge {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+            border: 1.5px solid rgba(139, 92, 246, 0.5);
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+        }
     </style>
 </head>
 <body>
@@ -59,14 +72,14 @@
     <section class="relative min-h-screen flex items-center justify-center hero-gradient px-6 pt-20">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center z-10">
             <div class="text-left">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-bold mb-6 tracking-[0.3em]">
-                    AGENTIC AI SYSTEMS ARCHITECT
+                <div class="ai-badge inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-slate-200 text-[10px] font-bold mb-6 tracking-[0.3em]">
+                    🤖 AGENTIC AI SYSTEMS ARCHITECT
                 </div>
-                <h1 class="text-6xl md:text-8xl font-bold text-white leading-[0.9] mb-8">
-                    Engineering the Future of <span class="text-gradient">Autonomous Work.</span>
+                <h1 class="text-5xl md:text-7xl font-bold text-white leading-[0.9] mb-8">
+                    Engineering the Future of <span class="ai-highlight">Autonomous AI Work.</span>
                 </h1>
                 <p class="text-slate-400 text-lg md:text-xl max-w-xl leading-relaxed mb-10">
-                    Designing autonomous <span class="text-white">Multi-Agent Swarms</span> that reason, plan, and self-correct. Specialist in RAG pipelines and domain-specific LLM fine-tuning. Bridging the gap between static code and self-evolving intelligence.
+                    Designing autonomous <span class="ai-highlight">Multi-Agent AI Swarms</span> that reason, plan, and self-correct. <span class="text-blue-400 font-bold">AI Specialist</span> in RAG pipelines and domain-specific LLM fine-tuning. Bridging the gap between static code and self-evolving <span class="text-purple-400 font-bold">artificial intelligence</span>.
                 </p>
                 <div class="flex flex-wrap gap-4">
                     <a href="#architectures" class="px-10 py-4 bg-white text-black font-black rounded-full hover:scale-105 transition-all">EXPLORE AGENT CORES</a>
@@ -137,15 +150,15 @@
 
     <section id="architectures" class="py-32 px-6">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-bold mb-16 text-center">Multi-Agent <span class="text-blue-500">Workflows</span></h2>
+            <h2 class="text-4xl md:text-5xl font-bold mb-16 text-center">Multi-Agent <span class="ai-highlight">AI Workflows</span></h2>
             
             
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
                 <div class="p-10 glass-card rounded-[40px] border-l-4 border-blue-500">
-                    <h3 class="text-2xl font-bold mb-6 italic text-white">The Self-Healing Coder Swarm</h3>
+                    <h3 class="text-2xl font-bold mb-6 italic"><span class="ai-highlight">AI-Powered</span> Self-Healing Coder Swarm</h3>
                     <p class="text-slate-400 leading-relaxed mb-8">
-                        Deploying an autonomous software team where specialized sub-agents interact in a high-speed feedback loop to solve complex engineering issues.
+                        Deploying an autonomous <span class="text-blue-300 font-semibold">AI software team</span> where specialized sub-agents interact in a high-speed feedback loop to solve complex engineering issues with minimal human intervention.
                     </p>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="agent-node"><span class="text-blue-400 font-bold">PLANNER</span><p class="text-[10px] text-center">Architects the solution path</p></div>
@@ -156,7 +169,7 @@
                 </div>
 
                 <div class="p-10 glass-card rounded-[40px] border-l-4 border-purple-500">
-                    <h3 class="text-2xl font-bold mb-6 italic text-white">Agentic HR & Logistics</h3>
+                    <h3 class="text-2xl font-bold mb-6 italic"><span class="ai-highlight">Enterprise AI</span> - HR & Logistics</h3>
                     <p class="text-slate-400 leading-relaxed mb-8">
                         From <span class="text-white">AI Resume Builders</span> that dynamically optimize career profiles to <span class="text-white">Vision Agents</span> that automate logistics tracking.
                     </p>
@@ -181,23 +194,23 @@
 
     <section id="capabilities" class="py-32 px-6 bg-white/[0.01]">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-16 uppercase tracking-[0.2em] text-slate-500">Specialized Domain Skills</h2>
+            <h2 class="text-3xl font-bold mb-16 uppercase tracking-[0.2em] text-slate-500">Specialized <span class="text-blue-400">AI</span> Domain Skills</h2>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                <div class="p-8 border border-white/10 rounded-2xl hover:bg-blue-500/5 transition">
-                    <h4 class="font-bold text-white mb-2">Fine-Tuning</h4>
-                    <p class="text-xs text-slate-500">Optimizing Gemma, Florence-2, and DeepSeek for high-accuracy local inference.</p>
+                <div class="p-8 border border-white/10 rounded-2xl hover:bg-blue-500/5 transition hover:border-blue-500/40">
+                    <h4 class="font-bold text-white mb-4 text-lg flex items-center gap-2"><i class="fas fa-microchip text-blue-400"></i>AI Fine-Tuning</h4>
+                    <p class="text-sm text-slate-300 leading-relaxed">Optimizing advanced AI models (Gemma, Florence-2, DeepSeek) for high-accuracy local inference.</p>
                 </div>
-                <div class="p-8 border border-white/10 rounded-2xl hover:bg-purple-500/5 transition">
-                    <h4 class="font-bold text-white mb-2">Agent Orchestration</h4>
-                    <p class="text-xs text-slate-500">Mastery in LangGraph, CrewAI, and custom sub-agent skill definition.</p>
+                <div class="p-8 border border-white/10 rounded-2xl hover:bg-purple-500/5 transition hover:border-purple-500/40">
+                    <h4 class="font-bold text-white mb-4 text-lg flex items-center gap-2"><i class="fas fa-chess text-purple-400"></i>AI Agent Orchestration</h4>
+                    <p class="text-sm text-slate-300 leading-relaxed">Mastery in AI frameworks (LangGraph, CrewAI) and custom sub-agent skill definition.</p>
                 </div>
-                <div class="p-8 border border-white/10 rounded-2xl hover:bg-green-500/5 transition">
-                    <h4 class="font-bold text-white mb-2">Advanced RAG</h4>
-                    <p class="text-xs text-slate-500">Self-correcting knowledge retrieval with hybrid search and vector databases.</p>
+                <div class="p-8 border border-white/10 rounded-2xl hover:bg-green-500/5 transition hover:border-green-500/40">
+                    <h4 class="font-bold text-white mb-4 text-lg flex items-center gap-2"><i class="fas fa-brain text-green-400"></i>Advanced AI RAG</h4>
+                    <p class="text-sm text-slate-300 leading-relaxed">Self-correcting knowledge retrieval with hybrid search and vector databases.</p>
                 </div>
-                <div class="p-8 border border-white/10 rounded-2xl hover:bg-orange-500/5 transition">
-                    <h4 class="font-bold text-white mb-2">Edge Deployment</h4>
-                    <p class="text-xs text-slate-500">Running production-grade vision and NLP models on constrained local hardware.</p>
+                <div class="p-8 border border-white/10 rounded-2xl hover:bg-orange-500/5 transition hover:border-orange-500/40">
+                    <h4 class="font-bold text-white mb-4 text-lg flex items-center gap-2"><i class="fas fa-rocket text-orange-400"></i>Edge AI Deployment</h4>
+                    <p class="text-sm text-slate-300 leading-relaxed">Running production-grade vision and NLP models on constrained local hardware.</p>
                 </div>
             </div>
         </div>
@@ -205,7 +218,7 @@
 
     <section id="insights" class="py-32 px-6">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12">Neural Insights</h2>
+            <h2 class="text-3xl font-bold mb-12">Neural <span class="text-blue-400">AI</span> Insights</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="group p-8 glass-card rounded-3xl border border-white/5 hover:border-blue-500/40 transition">
                     <p class="text-[10px] font-bold text-blue-500 mb-2 uppercase">Architectural Patterns</p>
