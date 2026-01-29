@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shreetej Ghodekar | GenAI & Multi-Agent Systems Architect</title>
+    <title>Shreetej Ghodekar | GenAI & Agentic Systems Architect</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -13,13 +13,13 @@
         h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
 
         .hero-gradient {
-            background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.12) 0%, rgba(5, 5, 5, 1) 80%);
+            background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1) 0%, rgba(5, 5, 5, 1) 80%);
         }
 
         .glass-card { 
             background: rgba(15, 15, 15, 0.7); 
             backdrop-filter: blur(16px); 
-            border: 1px solid rgba(255, 255, 255, 0.08); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
         }
 
         .text-gradient { 
@@ -28,7 +28,7 @@
             -webkit-text-fill-color: transparent; 
         }
 
-        /* Technical Marquee */
+        /* Marquee Animation */
         @keyframes scroll {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
@@ -36,11 +36,12 @@
         .marquee {
             display: flex;
             width: 200%;
-            animation: scroll 25s linear infinite;
+            animation: scroll 30s linear infinite;
         }
+        .marquee:hover { animation-play-state: paused; }
 
-        .agent-pill {
-            @apply px-4 py-2 rounded-lg border border-white/10 bg-white/5 text-xs font-bold tracking-widest uppercase text-slate-400 hover:border-blue-500/50 transition-all;
+        .agent-node {
+            @apply p-4 rounded-xl border border-white/10 bg-white/5 flex flex-col items-center gap-2;
         }
     </style>
 </head>
@@ -51,7 +52,7 @@
         <div class="hidden md:flex space-x-8 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
             <a href="#architectures" class="hover:text-blue-400 transition">Agent Architectures</a>
             <a href="#capabilities" class="hover:text-blue-400 transition">Capabilities</a>
-            <a href="#insights" class="hover:text-blue-400 transition">Neural Insights</a>
+            <a href="#insights" class="hover:text-blue-400 transition">Insights</a>
         </div>
     </nav>
 
@@ -59,41 +60,49 @@
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center z-10">
             <div class="text-left">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-bold mb-6 tracking-[0.3em]">
-                    GENERATIVE AI & AGENTIC ARCHITECT
+                    AGENTIC AI SYSTEMS ARCHITECT
                 </div>
-                <h1 class="text-5xl md:text-7xl font-bold text-white leading-[1.1] mb-8">
+                <h1 class="text-6xl md:text-8xl font-bold text-white leading-[0.9] mb-8">
                     Engineering the Future of <span class="text-gradient">Autonomous Work.</span>
                 </h1>
                 <p class="text-slate-400 text-lg md:text-xl max-w-xl leading-relaxed mb-10">
-                    I architect <span class="text-white">Multi-Agent Systems</span> that reason, plan, and execute. Bridging the gap between static code and self-evolving intelligence.
+                    Designing autonomous <span class="text-white">Multi-Agent Swarms</span> that reason, plan, and self-correct. Specialist in RAG pipelines and domain-specific LLM fine-tuning. Bridging the gap between static code and self-evolving intelligence.
                 </p>
                 <div class="flex flex-wrap gap-4">
-                    <a href="#architectures" class="px-10 py-4 bg-white text-black font-black rounded-xl hover:bg-blue-500 hover:text-white transition-all">EXPLORE AGENT CORES</a>
-                    <a href="mailto:shreetejghodekar@gmail.com" class="px-10 py-4 glass-card text-white font-bold rounded-xl hover:bg-white/10 transition-all">COLLABORATE</a>
+                    <a href="#architectures" class="px-10 py-4 bg-white text-black font-black rounded-full hover:scale-105 transition-all">EXPLORE AGENT CORES</a>
+                    <a href="mailto:shreetejghodekar@gmail.com" class="px-10 py-4 glass-card text-white font-bold rounded-full hover:bg-white/10 transition-all">COLLABORATE</a>
                 </div>
             </div>
 
-            <div class="relative group">
-                <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-                <div class="relative glass-card p-8 rounded-3xl border-white/10">
+            <div class="relative">
+                <div class="glass-card p-8 rounded-3xl border-blue-500/20 shadow-2xl shadow-blue-500/10">
                     <div class="flex justify-between items-center mb-6">
-                        <div class="flex gap-2 text-xs font-mono text-slate-500">
-                            <span class="text-green-500">●</span> AGENT_ORCHESTRATOR_ONLINE
+                        <div class="flex gap-2">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
                         </div>
+                        <span class="text-[10px] font-mono text-slate-500 tracking-widest uppercase">Agent_Orchestration_v2.0</span>
                     </div>
                     <div class="font-mono text-sm space-y-4">
-                        <div class="flex gap-3"><span class="text-blue-500">INFO:</span> <span class="text-slate-400">Loading Agent Profiles...</span></div>
-                        <div class="flex gap-3 pl-4 border-l border-blue-500/30">
-                            <span class="text-purple-400">PLANNER:</span> <span class="text-slate-300">Decomposing complex engineering task.</span>
+                        <div class="flex gap-3">
+                            <span class="text-blue-500">SYSTEM:</span>
+                            <span class="text-slate-300">Initializing Multi-Agent Deployment...</span>
                         </div>
                         <div class="flex gap-3 pl-4 border-l border-blue-500/30">
-                            <span class="text-blue-400">CODER:</span> <span class="text-slate-300">Generating fine-tuned logic sequences.</span>
+                            <span class="text-purple-400">PLANNER:</span>
+                            <span class="text-slate-400">Task: Build production-ready AI Resume Builder.</span>
                         </div>
                         <div class="flex gap-3 pl-4 border-l border-blue-500/30">
-                            <span class="text-orange-400">REVIEWER:</span> <span class="text-slate-300">Validating output via self-correction loops.</span>
+                            <span class="text-green-400">CODER:</span>
+                            <span class="text-slate-400">Executing Fine-tuning on DeepSeek-Coder-v2...</span>
                         </div>
-                        <div class="pt-4 text-[10px] text-blue-500/40">
-                            THREADS: [RAG_ENGINE, VISION_MODEL, RESOLVER_V2]
+                        <div class="flex gap-3 pl-4 border-l border-blue-500/30">
+                            <span class="text-orange-400">REVIEWER:</span>
+                            <span class="text-slate-400">Logic validated. Deploying via LangGraph.</span>
+                        </div>
+                        <div class="pt-2 text-[10px] text-blue-500/60 animate-pulse">
+                            _ACTIVE_THREADS: [RAG_ENGINE, VISION_OCR, AGENT_RESOLVER]
                         </div>
                     </div>
                 </div>
@@ -104,59 +113,65 @@
     <div class="py-12 bg-white/[0.02] border-y border-white/5 overflow-hidden">
         <div class="marquee">
             <div class="flex gap-20 items-center px-10">
-                <span class="text-xl font-bold text-slate-500 flex items-center gap-3 italic"><i class="fab fa-python"></i> PYTHON</span>
-                <span class="text-xl font-bold text-slate-500 flex items-center gap-3 italic">LANGCHAIN</span>
-                <span class="text-xl font-bold text-slate-500 flex items-center gap-3 italic">LANGGRAPH</span>
-                <span class="text-xl font-bold text-slate-500 flex items-center gap-3 italic">RAG ARCHITECTURES</span>
-                <span class="text-xl font-bold text-slate-500 flex items-center gap-3 italic">FINE-TUNING</span>
-                <span class="text-xl font-bold text-slate-500 flex items-center gap-3 italic">CREW AI</span>
-                <span class="text-xl font-bold text-slate-500 flex items-center gap-3 italic">DEEPSEEK / LLAMA</span>
-                <span class="text-xl font-bold text-slate-500 flex items-center gap-3 italic">FLORENCE-2 VISION</span>
+                <span class="text-2xl font-bold text-slate-600 flex items-center gap-3"><i class="fab fa-python text-blue-500"></i> PYTHON</span>
+                <span class="text-2xl font-bold text-slate-600 flex items-center gap-3"><i class="fas fa-robot text-purple-500"></i> LANGCHAIN</span>
+                <span class="text-2xl font-bold text-slate-600 flex items-center gap-3"><i class="fas fa-network-wired text-green-500"></i> LANGGRAPH</span>
+                <span class="text-2xl font-bold text-slate-600 flex items-center gap-3"><i class="fab fa-aws text-orange-500"></i> AWS</span>
+                <span class="text-2xl font-bold text-slate-600 flex items-center gap-3"><i class="fas fa-database text-blue-400"></i> POSTGRESQL</span>
+                <span class="text-2xl font-bold text-slate-600 flex items-center gap-3"><i class="fab fa-docker text-blue-600"></i> DOCKER</span>
+                <span class="text-2xl font-bold text-slate-600 flex items-center gap-3"><i class="fab fa-golang text-cyan-500"></i> GOLANG</span>
+                <span class="text-2xl font-bold text-slate-600 flex items-center gap-3"><i class="fab fa-react text-blue-300"></i> NEXT.JS</span>
             </div>
             <div class="flex gap-20 items-center px-10">
-                <span class="text-xl font-bold text-slate-500 flex items-center gap-3 italic"><i class="fab fa-python"></i> PYTHON</span>
-                <span class="text-xl font-bold text-slate-500 flex items-center gap-3 italic">LANGCHAIN</span>
-                <span class="text-xl font-bold text-slate-500 flex items-center gap-3 italic">LANGGRAPH</span>
-                <span class="text-xl font-bold text-slate-500 flex items-center gap-3 italic">RAG ARCHITECTURES</span>
-                <span class="text-xl font-bold text-slate-500 flex items-center gap-3 italic">FINE-TUNING</span>
-                <span class="text-xl font-bold text-slate-500 flex items-center gap-3 italic">CREW AI</span>
-                <span class="text-xl font-bold text-slate-500 flex items-center gap-3 italic">DEEPSEEK / LLAMA</span>
-                <span class="text-xl font-bold text-slate-500 flex items-center gap-3 italic">FLORENCE-2 VISION</span>
+                <span class="text-2xl font-bold text-slate-600 flex items-center gap-3"><i class="fab fa-python text-blue-500"></i> PYTHON</span>
+                <span class="text-2xl font-bold text-slate-600 flex items-center gap-3"><i class="fas fa-robot text-purple-500"></i> LANGCHAIN</span>
+                <span class="text-2xl font-bold text-slate-600 flex items-center gap-3"><i class="fas fa-network-wired text-green-500"></i> LANGGRAPH</span>
+                <span class="text-2xl font-bold text-slate-600 flex items-center gap-3"><i class="fab fa-aws text-orange-500"></i> AWS</span>
+                <span class="text-2xl font-bold text-slate-600 flex items-center gap-3"><i class="fas fa-database text-blue-400"></i> POSTGRESQL</span>
+                <span class="text-2xl font-bold text-slate-600 flex items-center gap-3"><i class="fab fa-docker text-blue-600"></i> DOCKER</span>
+                <span class="text-2xl font-bold text-slate-600 flex items-center gap-3"><i class="fab fa-golang text-cyan-500"></i> GOLANG</span>
+                <span class="text-2xl font-bold text-slate-600 flex items-center gap-3"><i class="fab fa-react text-blue-300"></i> NEXT.JS</span>
             </div>
         </div>
     </div>
 
     <section id="architectures" class="py-32 px-6">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-16 uppercase tracking-widest text-slate-500">Autonomous Agentic Swarms</h2>
+            <h2 class="text-4xl md:text-5xl font-bold mb-16 text-center">Multi-Agent <span class="text-blue-500">Workflows</span></h2>
             
             
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16">
-                <div class="p-10 glass-card rounded-3xl border-t-4 border-blue-500">
-                    <h3 class="text-2xl font-bold mb-6 text-white italic">Self-Healing Developer Swarm</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
+                <div class="p-10 glass-card rounded-[40px] border-l-4 border-blue-500">
+                    <h3 class="text-2xl font-bold mb-6 italic text-white">The Self-Healing Coder Swarm</h3>
                     <p class="text-slate-400 leading-relaxed mb-8">
-                        Orchestrating hierarchical multi-agent frameworks where a <strong>Lead Planner</strong> delegates complex logic to specialized sub-agents.
+                        Deploying an autonomous software team where specialized sub-agents interact in a high-speed feedback loop to solve complex engineering issues.
                     </p>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="agent-pill">Planner</span>
-                        <span class="agent-pill">Coder</span>
-                        <span class="agent-pill">Reviewer</span>
-                        <span class="agent-pill">Issue Resolver</span>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="agent-node"><span class="text-blue-400 font-bold">PLANNER</span><p class="text-[10px] text-center">Architects the solution path</p></div>
+                        <div class="agent-node"><span class="text-green-400 font-bold">CODER</span><p class="text-[10px] text-center">Writes clean, modular code</p></div>
+                        <div class="agent-node"><span class="text-purple-400 font-bold">REVIEWER</span><p class="text-[10px] text-center">Checks logic & performance</p></div>
+                        <div class="agent-node"><span class="text-orange-400 font-bold">RESOLVER</span><p class="text-[10px] text-center">Fixes bugs & refactors</p></div>
                     </div>
                 </div>
 
-                <div class="p-10 glass-card rounded-3xl border-t-4 border-purple-500">
-                    <h3 class="text-2xl font-bold mb-6 text-white italic">Vision-Integrated Logistics</h3>
+                <div class="p-10 glass-card rounded-[40px] border-l-4 border-purple-500">
+                    <h3 class="text-2xl font-bold mb-6 italic text-white">Agentic HR & Logistics</h3>
                     <p class="text-slate-400 leading-relaxed mb-8">
-                        Fusing Vision-LLMs (Florence-2/Gemma) with agentic reasoning to automate high-throughput logistics and OCR tasks.
+                        From <span class="text-white">AI Resume Builders</span> that dynamically optimize career profiles to <span class="text-white">Vision Agents</span> that automate logistics tracking.
                     </p>
                     <ul class="space-y-4">
-                        <li class="flex items-center gap-3 text-sm text-slate-300">
-                            <i class="fas fa-microchip text-purple-400"></i> Edge Model Optimization
+                        <li class="flex items-center gap-3 p-3 bg-white/5 rounded-xl border border-white/5">
+                            <i class="fas fa-file-invoice text-purple-400"></i>
+                            <span class="text-sm">Dynamic ATS Analysis Agents</span>
                         </li>
-                        <li class="flex items-center gap-3 text-sm text-slate-300">
-                            <i class="fas fa-barcode text-purple-400"></i> Autonomous Data Entry Agents
+                        <li class="flex items-center gap-3 p-3 bg-white/5 rounded-xl border border-white/5">
+                            <i class="fas fa-box text-green-400"></i>
+                            <span class="text-sm">OCR-Vision Intelligence Swarm</span>
+                        </li>
+                        <li class="flex items-center gap-3 p-3 bg-white/5 rounded-xl border border-white/5">
+                            <i class="fas fa-comment-dots text-blue-400"></i>
+                            <span class="text-sm">Self-Correcting RAG Bots</span>
                         </li>
                     </ul>
                 </div>
@@ -166,28 +181,23 @@
 
     <section id="capabilities" class="py-32 px-6 bg-white/[0.01]">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-center text-4xl font-bold mb-20">Architectural Expertise</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="space-y-4">
-                    <div class="h-1 bg-blue-500 w-12 mb-6"></div>
-                    <h4 class="text-xl font-bold text-white">LLM Fine-Tuning</h4>
-                    <p class="text-sm text-slate-500 leading-relaxed">
-                        Optimizing models like DeepSeek and Llama for domain-specific technical tasks, ensuring high-speed local inference and accuracy.
-                    </p>
+            <h2 class="text-3xl font-bold mb-16 uppercase tracking-[0.2em] text-slate-500">Specialized Domain Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="p-8 border border-white/10 rounded-2xl hover:bg-blue-500/5 transition">
+                    <h4 class="font-bold text-white mb-2">Fine-Tuning</h4>
+                    <p class="text-xs text-slate-500">Optimizing Gemma, Florence-2, and DeepSeek for high-accuracy local inference.</p>
                 </div>
-                <div class="space-y-4">
-                    <div class="h-1 bg-purple-500 w-12 mb-6"></div>
-                    <h4 class="text-xl font-bold text-white">Advanced RAG</h4>
-                    <p class="text-sm text-slate-500 leading-relaxed">
-                        Designing self-correcting RAG pipelines using hybrid search and vector databases for national-scale information retrieval.
-                    </p>
+                <div class="p-8 border border-white/10 rounded-2xl hover:bg-purple-500/5 transition">
+                    <h4 class="font-bold text-white mb-2">Agent Orchestration</h4>
+                    <p class="text-xs text-slate-500">Mastery in LangGraph, CrewAI, and custom sub-agent skill definition.</p>
                 </div>
-                <div class="space-y-4">
-                    <div class="h-1 bg-green-500 w-12 mb-6"></div>
-                    <h4 class="text-xl font-bold text-white">Full-Stack AI</h4>
-                    <p class="text-sm text-slate-500 leading-relaxed">
-                        Deploying production-grade applications using Golang, Next.js, and PostgreSQL, integrated with agentic middleware.
-                    </p>
+                <div class="p-8 border border-white/10 rounded-2xl hover:bg-green-500/5 transition">
+                    <h4 class="font-bold text-white mb-2">Advanced RAG</h4>
+                    <p class="text-xs text-slate-500">Self-correcting knowledge retrieval with hybrid search and vector databases.</p>
+                </div>
+                <div class="p-8 border border-white/10 rounded-2xl hover:bg-orange-500/5 transition">
+                    <h4 class="font-bold text-white mb-2">Edge Deployment</h4>
+                    <p class="text-xs text-slate-500">Running production-grade vision and NLP models on constrained local hardware.</p>
                 </div>
             </div>
         </div>
@@ -195,28 +205,30 @@
 
     <section id="insights" class="py-32 px-6">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 italic">Neural Insights</h2>
+            <h2 class="text-3xl font-bold mb-12">Neural Insights</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="p-8 border border-white/5 rounded-2xl hover:bg-white/5 transition group">
-                    <h4 class="text-xl font-bold mb-4 group-hover:text-blue-400 transition">The Move to Autonomous Reasoning Engines</h4>
-                    <p class="text-sm text-slate-500">Why simple RAG is no longer enough and how agentic planning is redefining the SaaS landscape.</p>
+                <div class="group p-8 glass-card rounded-3xl border border-white/5 hover:border-blue-500/40 transition">
+                    <p class="text-[10px] font-bold text-blue-500 mb-2 uppercase">Architectural Patterns</p>
+                    <h4 class="text-xl font-bold mb-4 group-hover:text-blue-400 transition">Solving Developer Bottlenecks with Multi-Agent Swarms</h4>
+                    <p class="text-sm text-slate-500">A technical look at how the 'Planner-Coder-Reviewer' loop can automate up to 70% of routine coding tasks.</p>
                 </div>
-                <div class="p-8 border border-white/5 rounded-2xl hover:bg-white/5 transition group">
-                    <h4 class="text-xl font-bold mb-4 group-hover:text-purple-400 transition">High-Throughput Vision Agents on the Edge</h4>
-                    <p class="text-sm text-slate-500">Optimizing Florence-2 for real-time logistics tracking without reliance on cloud APIs.</p>
+                <div class="group p-8 glass-card rounded-3xl border border-white/5 hover:border-purple-500/40 transition">
+                    <p class="text-[10px] font-bold text-purple-500 mb-2 uppercase">Vision & Edge</p>
+                    <h4 class="text-xl font-bold mb-4 group-hover:text-purple-400 transition">Fine-tuning Florence-2 for Ultra-Fast OCR in Logistics</h4>
+                    <p class="text-sm text-slate-500">Strategies for deploying vision agents that extract parcel data in sub-second inference times.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-24 px-6 border-t border-white/5 text-center">
-        <h2 class="text-4xl font-bold mb-12 tracking-tighter italic">Scaling Intelligence. Improving Society.</h2>
+    <footer class="py-20 px-6 border-t border-white/5 text-center">
+        <h2 class="text-3xl font-bold mb-10 italic tracking-tighter">Automating the Future of Society.</h2>
         <div class="flex justify-center gap-10 mb-12">
-            <a href="https://linkedin.com/in/shreetej-ghodekar-0b26" class="text-slate-500 hover:text-white transition"><i class="fab fa-linkedin fa-2xl"></i></a>
-            <a href="mailto:shreetejghodekar@gmail.com" class="text-slate-500 hover:text-white transition"><i class="fas fa-envelope fa-2xl"></i></a>
-            <a href="#" class="text-slate-500 hover:text-white transition"><i class="fab fa-github fa-2xl"></i></a>
+            <a href="https://linkedin.com/in/shreetej-ghodekar-0b26" class="text-slate-500 hover:text-blue-500 transition"><i class="fab fa-linkedin fa-2xl"></i></a>
+            <a href="mailto:shreetejghodekar@gmail.com" class="text-slate-500 hover:text-blue-500 transition"><i class="fas fa-envelope fa-2xl"></i></a>
+            <a href="#" class="text-slate-500 hover:text-blue-500 transition"><i class="fab fa-github fa-2xl"></i></a>
         </div>
-        <p class="text-slate-700 text-[10px] font-bold tracking-[0.4em] uppercase">Senior ML Engineer @ Department of Posts | Navi Mumbai, India</p>
+        <p class="text-slate-600 text-[10px] font-bold tracking-[0.4em] uppercase">Senior ML Engineer @ Department of Posts | Navi Mumbai, India</p>
     </footer>
 
 </body>
